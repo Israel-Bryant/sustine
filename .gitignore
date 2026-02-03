@@ -1,8 +1,0 @@
-﻿# Ignore reserved and system files
-nul
-AppData/
-target/
-*.log
-*.class
-*.iml
-.vscode/
