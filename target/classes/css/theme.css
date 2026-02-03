@@ -1,0 +1,691 @@
+/* ============================================
+   SUPORTE CASAS PEDRO - THEME v3.0
+   Paleta: Indigo/Roxo (#6366F1) + Ciano (#22D3EE)
+   Seletores específicos para sobrescrever AtlantaFX
+   ============================================ */
+
+/* === RESET ATLANTAFX ACCENT COLOR === */
+.root {
+    -fx-accent: #6366F1;
+    -fx-focus-color: #6366F1;
+    -fx-default-button: #6366F1;
+    -color-accent-emphasis: #6366F1;
+    -color-accent-fg: #6366F1;
+    -color-accent-muted: rgba(99, 102, 241, 0.4);
+    -color-accent-subtle: rgba(99, 102, 241, 0.15);
+}
+
+/* === BACKGROUND GLOBAL === */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #0A0A0F, #0F0F18);
+    -fx-font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* === HEADER === */
+.header {
+    -fx-background-color: #12121A;
+    -fx-padding: 16 40 16 40;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Logo Badge com Gradiente */
+.logo-badge {
+    -fx-background-color: linear-gradient(to bottom right, #6366F1, #22D3EE);
+    -fx-background-radius: 10;
+    -fx-min-width: 42;
+    -fx-min-height: 42;
+    -fx-pref-width: 42;
+    -fx-pref-height: 42;
+    -fx-alignment: center;
+}
+
+.logo-badge .label,
+.logo-badge-text {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.logo-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8FAFC;
+}
+
+.logo-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #94A3B8;
+}
+
+/* === SEARCH BOX === */
+.search-box {
+    -fx-background-color: #1A1A24;
+    -fx-background-radius: 28;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 28;
+    -fx-border-width: 1;
+    -fx-padding: 6 8 6 18;
+    -fx-spacing: 10;
+    -fx-min-height: 48;
+    -fx-pref-height: 48;
+}
+
+.search-box:hover {
+    -fx-border-color: rgba(99, 102, 241, 0.5);
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.25), 20, 0, 0, 0);
+}
+
+/* Search Icon (Ikonli) */
+.search-icon {
+    -fx-icon-color: #A78BFA;
+    -fx-fill: #A78BFA;
+    -fx-icon-size: 18;
+}
+
+/* Search Field */
+.search-box .text-field,
+.search-box > .text-field,
+.search-field {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-text-fill: #F8FAFC;
+    -fx-prompt-text-fill: #64748B;
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-font-size: 14px;
+    -fx-padding: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.search-box .text-field:focused,
+.search-field:focused {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+}
+
+/* SEARCH BUTTON - Seletores fortes para sobrescrever AtlantaFX */
+.search-box .button,
+.search-box > .button,
+.search-btn,
+#searchBtn {
+    -fx-background-color: #6366F1;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-width: 0;
+    -fx-min-width: 36;
+    -fx-min-height: 36;
+    -fx-pref-width: 36;
+    -fx-pref-height: 36;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 0;
+}
+
+.search-box .button:hover,
+.search-box > .button:hover,
+.search-btn:hover,
+#searchBtn:hover {
+    -fx-background-color: #818CF8;
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.5), 12, 0, 0, 0);
+}
+
+.search-box .button:pressed,
+.search-btn:pressed,
+#searchBtn:pressed {
+    -fx-background-color: #4F46E5;
+}
+
+.search-box .button:focused,
+.search-btn:focused,
+#searchBtn:focused {
+    -fx-background-color: #6366F1;
+    -fx-border-width: 0;
+}
+
+/* === CONTENT AREA === */
+.content {
+    -fx-background-color: transparent;
+}
+
+/* === SPLIT PANE === */
+.main-split-pane {
+    -fx-background-color: transparent;
+}
+
+.main-split-pane .split-pane-divider {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-padding: 0;
+}
+
+.cards-panel {
+    -fx-background-color: transparent;
+}
+
+.chat-panel {
+    -fx-background-color: #12121A;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-width: 0 1 0 0;
+    -fx-min-width: 300;
+    -fx-pref-width: 350;
+}
+
+.section-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #F8FAFC;
+}
+
+.section-desc {
+    -fx-text-fill: #94A3B8;
+    -fx-font-size: 15px;
+}
+
+/* === CARDS BASE === */
+.card {
+    -fx-background-color: #1A1A24;
+    -fx-background-radius: 16;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-radius: 16;
+    -fx-border-width: 1;
+    -fx-padding: 24;
+    -fx-cursor: hand;
+    -fx-min-height: 160;
+    -fx-pref-width: 400;
+}
+
+.card:hover {
+    -fx-background-color: #22222E;
+    -fx-border-color: #6366F1;
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.3), 30, 0, 0, 0);
+}
+
+/* Card Icon Box - Normal (Roxo) */
+.card-icon-box {
+    -fx-background-color: rgba(99, 102, 241, 0.15);
+    -fx-background-radius: 12;
+    -fx-min-width: 52;
+    -fx-min-height: 52;
+    -fx-pref-width: 52;
+    -fx-pref-height: 52;
+    -fx-alignment: center;
+}
+
+.card:hover .card-icon-box {
+    -fx-background-color: #6366F1;
+}
+
+/* Ícones dentro dos cards */
+.card-icon-box .ikonli-font-icon,
+.card-icon-warning .ikonli-font-icon,
+.card-icon-cyan .ikonli-font-icon {
+    -fx-icon-size: 24;
+    -fx-fill: #A78BFA;
+    -fx-icon-color: #A78BFA;
+}
+
+.card:hover .card-icon-box .ikonli-font-icon {
+    -fx-fill: white;
+    -fx-icon-color: white;
+}
+
+.card-title {
+    -fx-font-size: 17px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #F8FAFC;
+}
+
+.card-desc {
+    -fx-text-fill: #94A3B8;
+    -fx-font-size: 13px;
+}
+
+.card-action {
+    -fx-text-fill: #64748B;
+    -fx-font-size: 12px;
+}
+
+.card:hover .card-action {
+    -fx-text-fill: #818CF8;
+}
+
+/* === CARD WARNING (Laranja) === */
+.card-warning {
+    -fx-background-color: #1A1A24;
+    -fx-border-color: rgba(245, 158, 11, 0.3);
+}
+
+.card-warning:hover {
+    -fx-background-color: #22222E;
+    -fx-border-color: #F59E0B;
+    -fx-effect: dropshadow(gaussian, rgba(245, 158, 11, 0.25), 30, 0, 0, 0);
+}
+
+.card-icon-warning {
+    -fx-background-color: rgba(245, 158, 11, 0.15);
+    -fx-background-radius: 12;
+    -fx-min-width: 52;
+    -fx-min-height: 52;
+    -fx-pref-width: 52;
+    -fx-pref-height: 52;
+    -fx-alignment: center;
+}
+
+.card-icon-warning .ikonli-font-icon {
+    -fx-fill: #FBBF24;
+    -fx-icon-color: #FBBF24;
+}
+
+.card-warning:hover .card-icon-warning {
+    -fx-background-color: #F59E0B;
+}
+
+.card-warning:hover .card-icon-warning .ikonli-font-icon {
+    -fx-fill: white;
+    -fx-icon-color: white;
+}
+
+.warning-icon {
+    -fx-fill: #F59E0B;
+    -fx-icon-color: #F59E0B;
+    -fx-icon-size: 14;
+}
+
+.card-warning-text {
+    -fx-text-fill: #F59E0B;
+    -fx-font-size: 12px;
+    -fx-font-weight: 500;
+}
+
+/* === CARD FEATURED (Ciano) === */
+.card-featured {
+    -fx-background-color: linear-gradient(to bottom right, #1A1A24, #1E2433);
+    -fx-border-color: rgba(34, 211, 238, 0.3);
+}
+
+.card-featured:hover {
+    -fx-background-color: linear-gradient(to bottom right, #1E1E2A, #222838);
+    -fx-border-color: #22D3EE;
+    -fx-effect: dropshadow(gaussian, rgba(34, 211, 238, 0.25), 30, 0, 0, 0);
+}
+
+.card-icon-cyan {
+    -fx-background-color: rgba(34, 211, 238, 0.15);
+    -fx-background-radius: 12;
+    -fx-min-width: 52;
+    -fx-min-height: 52;
+    -fx-pref-width: 52;
+    -fx-pref-height: 52;
+    -fx-alignment: center;
+}
+
+.card-icon-cyan .ikonli-font-icon {
+    -fx-fill: #22D3EE;
+    -fx-icon-color: #22D3EE;
+}
+
+.card-featured:hover .card-icon-cyan {
+    -fx-background-color: #22D3EE;
+}
+
+.card-featured:hover .card-icon-cyan .ikonli-font-icon {
+    -fx-fill: white;
+    -fx-icon-color: white;
+}
+
+.card-featured:hover .card-action {
+    -fx-text-fill: #22D3EE;
+}
+
+/* === FOOTER === */
+.footer {
+    -fx-background-color: #12121A;
+    -fx-padding: 12 40 12 40;
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+}
+
+.footer-text {
+    -fx-text-fill: #64748B;
+    -fx-font-size: 12px;
+}
+
+.footer-version {
+    -fx-text-fill: #64748B;
+    -fx-font-size: 11px;
+    -fx-padding: 4 10 4 10;
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-background-radius: 12;
+}
+
+/* === REMOVE FOCUS RINGS === */
+.text-field:focused,
+.button:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-insets: 0;
+    -fx-border-width: 0;
+}
+
+/* === CARD STATES === */
+.card.running {
+    -fx-opacity: 0.7;
+    -fx-border-color: #818CF8;
+}
+
+.card.success {
+    -fx-border-color: #10B981;
+    -fx-effect: dropshadow(gaussian, rgba(16, 185, 129, 0.3), 20, 0, 0, 0);
+}
+
+.card.error {
+    -fx-border-color: #EF4444;
+    -fx-effect: dropshadow(gaussian, rgba(239, 68, 68, 0.3), 20, 0, 0, 0);
+}
+
+.card.suggested {
+    -fx-border-color: #A78BFA;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(167, 139, 250, 0.4), 25, 0, 0, 0);
+}
+
+/* === SCROLLBAR STYLING === */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 4;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ============================================
+   CHAT STYLES
+   ============================================ */
+
+.chat-container {
+    -fx-background-color: #12121A;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-width: 0 0 1 0;
+    -fx-min-height: 350;
+    -fx-pref-height: 380;
+}
+
+/* Chat em painel lateral (não usado quando em split-pane) */
+
+.chat-header {
+    -fx-background-color: #1A1A24;
+    -fx-padding: 16 20 16 20;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-width: 0 0 1 0;
+    -fx-spacing: 12;
+}
+
+.chat-header-icon {
+    -fx-fill: #6366F1;
+    -fx-icon-color: #6366F1;
+}
+
+.chat-header-title {
+    -fx-text-fill: #F8FAFC;
+    -fx-font-size: 13px;
+    -fx-font-weight: 500;
+}
+
+.chat-close-btn {
+    -fx-background-color: transparent;
+    -fx-background-radius: 6;
+    -fx-padding: 6;
+    -fx-cursor: hand;
+}
+
+.chat-close-btn .ikonli-font-icon {
+    -fx-fill: #64748B;
+    -fx-icon-color: #64748B;
+}
+
+.chat-close-btn:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+.chat-close-btn:hover .ikonli-font-icon {
+    -fx-fill: #F8FAFC;
+    -fx-icon-color: #F8FAFC;
+}
+
+.chat-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-padding: 0;
+}
+
+.chat-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+.chat-messages {
+    -fx-background-color: transparent;
+    -fx-spacing: 16;
+}
+
+/* Mensagens do Usuário (direita) */
+.chat-message-user {
+    -fx-background-color: #6366F1;
+    -fx-background-radius: 16 16 4 16;
+    -fx-padding: 14 18 14 18;
+    -fx-max-width: 450;
+}
+
+.chat-message-user .label {
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: 400;
+    -fx-wrap-text: true;
+    -fx-line-spacing: 2;
+}
+
+/* Mensagens da IA (esquerda) */
+.chat-message-ai {
+    -fx-background-color: #1A1A24;
+    -fx-background-radius: 16 16 16 4;
+    -fx-padding: 14 18 14 18;
+    -fx-max-width: 500;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-radius: 16 16 16 4;
+    -fx-border-width: 1;
+}
+
+.chat-message-ai .label {
+    -fx-text-fill: #E2E8F0;
+    -fx-font-size: 13px;
+    -fx-font-weight: 400;
+    -fx-wrap-text: true;
+    -fx-line-spacing: 2;
+}
+
+/* Mensagem de sistema/status */
+.chat-message-system {
+    -fx-background-color: rgba(99, 102, 241, 0.15);
+    -fx-background-radius: 12;
+    -fx-padding: 10 14 10 14;
+    -fx-max-width: 350;
+}
+
+.chat-message-system .label {
+    -fx-text-fill: #A78BFA;
+    -fx-font-size: 12px;
+}
+
+/* Mensagem de execução */
+.chat-message-executing {
+    -fx-background-color: rgba(34, 211, 238, 0.15);
+    -fx-background-radius: 12;
+    -fx-padding: 12 16 12 16;
+    -fx-border-color: rgba(34, 211, 238, 0.3);
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+}
+
+.chat-message-executing .label {
+    -fx-text-fill: #22D3EE;
+    -fx-font-size: 13px;
+}
+
+/* Mensagem de sucesso */
+.chat-message-success {
+    -fx-background-color: rgba(16, 185, 129, 0.15);
+    -fx-background-radius: 12;
+    -fx-padding: 12 16 12 16;
+    -fx-border-color: rgba(16, 185, 129, 0.3);
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+}
+
+.chat-message-success .label {
+    -fx-text-fill: #10B981;
+    -fx-font-size: 13px;
+}
+
+/* Mensagem de erro */
+.chat-message-error {
+    -fx-background-color: rgba(239, 68, 68, 0.15);
+    -fx-background-radius: 12;
+    -fx-padding: 12 16 12 16;
+    -fx-border-color: rgba(239, 68, 68, 0.3);
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+}
+
+.chat-message-error .label {
+    -fx-text-fill: #EF4444;
+    -fx-font-size: 13px;
+}
+
+/* Typing indicator */
+.chat-typing {
+    -fx-background-color: #1A1A24;
+    -fx-background-radius: 16;
+    -fx-padding: 12 16 12 16;
+}
+
+.chat-typing .label {
+    -fx-text-fill: #64748B;
+    -fx-font-size: 13px;
+    -fx-font-style: italic;
+}
+
+/* Chat Input Area */
+.chat-input-area {
+    -fx-background-color: #1A1A24;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-width: 1 0 0 0;
+    -fx-min-height: 80;
+}
+
+.chat-input-box {
+    -fx-background-color: #12121A;
+    -fx-background-radius: 28;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 28;
+    -fx-border-width: 1;
+    -fx-padding: 10 12 10 18;
+    -fx-spacing: 12;
+    -fx-min-height: 48;
+    -fx-max-height: 48;
+}
+
+.chat-input-box:hover {
+    -fx-border-color: rgba(99, 102, 241, 0.5);
+}
+
+.chat-input-icon {
+    -fx-fill: #64748B;
+    -fx-icon-color: #64748B;
+}
+
+.chat-input-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #F8FAFC;
+    -fx-prompt-text-fill: #64748B;
+    -fx-border-width: 0;
+    -fx-font-size: 13px;
+    -fx-font-weight: 400;
+    -fx-padding: 0;
+}
+
+.chat-send-btn {
+    -fx-background-color: #6366F1;
+    -fx-background-radius: 20;
+    -fx-min-width: 40;
+    -fx-min-height: 40;
+    -fx-pref-width: 40;
+    -fx-pref-height: 40;
+    -fx-cursor: hand;
+    -fx-padding: 0;
+}
+
+.chat-send-btn .ikonli-font-icon {
+    -fx-fill: white;
+    -fx-icon-color: white;
+}
+
+.chat-send-btn:hover {
+    -fx-background-color: #818CF8;
+}
+
+/* ============================================
+   SERVER STATUS INDICATOR
+   ============================================ */
+
+.status-dot {
+    -fx-fill: #64748B;
+}
+
+.status-glow {
+    -fx-fill: transparent;
+}
+
+/* Connected - Green */
+.status-connected .status-dot {
+    -fx-fill: #10B981;
+}
+
+.status-connected .status-glow {
+    -fx-fill: rgba(16, 185, 129, 0.4);
+}
+
+/* Connecting - Yellow */
+.status-connecting .status-dot {
+    -fx-fill: #F59E0B;
+}
+
+.status-connecting .status-glow {
+    -fx-fill: rgba(245, 158, 11, 0.4);
+}
+
+/* Disconnected - Red */
+.status-disconnected .status-dot {
+    -fx-fill: #EF4444;
+}
+
+.status-disconnected .status-glow {
+    -fx-fill: rgba(239, 68, 68, 0.4);
+}

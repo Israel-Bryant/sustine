@@ -1,0 +1,210 @@
+/* ============================================
+   PLANILHA - Theme v3.0
+   Paleta: Indigo/Roxo (#6366F1) + Ciano (#22D3EE)
+   ============================================ */
+
+/* === PAGE HEADER === */
+.page-header {
+    -fx-background-color: #12121A;
+    -fx-padding: 16 40 16 40;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+}
+
+.page-icon {
+    -fx-fill: #22D3EE;
+    -fx-icon-color: #22D3EE;
+}
+
+.page-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8FAFC;
+}
+
+.page-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #94A3B8;
+}
+
+/* === BACK BUTTON === */
+.btn-back {
+    -fx-background-color: #1A1A24;
+    -fx-text-fill: #F8FAFC;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+
+.btn-back:hover {
+    -fx-background-color: #22222E;
+    -fx-border-color: #6366F1;
+}
+
+/* === MAIN AREA === */
+.main-area {
+    -fx-background-color: transparent;
+}
+
+/* === DROP ZONE === */
+.drop-zone {
+    -fx-background-color: #1A1A24;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-width: 2;
+    -fx-border-style: dashed;
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+    -fx-padding: 32;
+}
+
+.drop-zone:hover {
+    -fx-border-color: #6366F1;
+    -fx-background-color: #22222E;
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.2), 20, 0, 0, 0);
+}
+
+.drop-zone-icon {
+    -fx-fill: #6366F1;
+    -fx-icon-color: #6366F1;
+    -fx-icon-size: 48;
+}
+
+.drop-zone-text {
+    -fx-font-size: 15px;
+    -fx-text-fill: #94A3B8;
+}
+
+.arquivo-nome {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #22D3EE;
+    -fx-padding: 8 16 8 16;
+    -fx-background-color: rgba(34, 211, 238, 0.15);
+    -fx-background-radius: 8;
+}
+
+/* === BUTTONS === */
+.btn-primary {
+    -fx-background-color: #6366F1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 12 24 12 24;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #818CF8;
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.4), 12, 0, 0, 0);
+}
+
+.btn-primary:disabled {
+    -fx-background-color: #1A1A24;
+    -fx-text-fill: #64748B;
+}
+
+.btn-secondary {
+    -fx-background-color: #1A1A24;
+    -fx-text-fill: #F8FAFC;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 12 24 12 24;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #22222E;
+    -fx-border-color: #6366F1;
+}
+
+.btn-secondary:disabled {
+    -fx-text-fill: #64748B;
+}
+
+/* === PROGRESS === */
+.progress-area {
+    -fx-padding: 16 0 0 0;
+}
+
+.progress-bar {
+    -fx-accent: #6366F1;
+}
+
+.progress-bar > .bar {
+    -fx-background-color: #6366F1;
+    -fx-background-radius: 4;
+}
+
+.progress-bar > .track {
+    -fx-background-color: #1A1A24;
+    -fx-background-radius: 4;
+}
+
+.progress-label {
+    -fx-text-fill: #818CF8;
+    -fx-font-weight: bold;
+}
+
+/* === RESULTADO === */
+.resultado-box {
+    -fx-padding: 14 24 14 24;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+}
+
+.resultado-sucesso {
+    -fx-background-color: rgba(16, 185, 129, 0.15);
+    -fx-border-color: #10B981;
+}
+
+.resultado-erro {
+    -fx-background-color: rgba(239, 68, 68, 0.15);
+    -fx-border-color: #EF4444;
+}
+
+.resultado-icon {
+    -fx-font-size: 22px;
+}
+
+.resultado-texto {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8FAFC;
+}
+
+/* === LOG === */
+.log-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8FAFC;
+}
+
+.log-area {
+    -fx-background-color: #0A0A0F;
+    -fx-text-fill: #94A3B8;
+    -fx-font-family: "Consolas", "Monaco", monospace;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.log-area .content {
+    -fx-background-color: #0A0A0F;
+}
+
+/* === FOOTER === */
+.page-footer {
+    -fx-background-color: #12121A;
+    -fx-padding: 12 40 12 40;
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+}
+
+.footer-info {
+    -fx-font-size: 11px;
+    -fx-text-fill: #64748B;
+}
