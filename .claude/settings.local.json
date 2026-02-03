@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -File - <<'EOF'\nAdd-Type -AssemblyName System.Drawing\n$img = [System.Drawing.Image]::FromFile\\(\"c:\\\\Users\\\\israel.bryant\\\\Documents\\\\projetos\\\\SuporteCasasPedro\\\\src\\\\resources\\\\images\\\\logo.png\"\\)\nWrite-Host \"Width: $\\($img.Width\\), Height: $\\($img.Height\\)\"\n$img.Dispose\\(\\)\nEOF)",
+      "Bash(mvn clean compile:*)"
+    ]
+  }
+}
